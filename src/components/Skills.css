@@ -1,0 +1,95 @@
+.skills-section {
+    padding: 40px 15px;
+    background-color: #f9fafb; /* Light, minimal background */
+    text-align: center;
+    border-radius: 10px; /* Rounded corners for a modern feel */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.skills-section h2 {
+    font-size: 2.4rem; /* Slightly larger for emphasis */
+    margin-bottom: 40px; /* Increased spacing for balance */
+    color: #222;
+    font-weight: 700; /* Bolder font weight */
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1.5px; /* Wider letter spacing */
+}
+
+.skills-section h2::after {
+    content: '';
+    background-color: #007bff; /* Maintained blue accent color */
+    position: absolute;
+    bottom: -8px; /* Adjusted position for better alignment */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills-category {
+    margin-bottom: 40px; /* Increased spacing for better separation */
+}
+
+.skills-category h3 {
+    font-size: 1.9rem; /* Slightly larger heading */
+    margin-bottom: 25px; /* Increased margin for more spacing */
+    color: #444;
+    text-transform: capitalize;
+    font-weight: 600; /* Bolder for visibility */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Wider cards for a better layout */
+    gap: 25px; /* Increased gap for better visual separation */
+}
+
+.skill-card {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    padding: 25px; /* More padding for a spacious feel */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    text-align: center;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px); /* More noticeable hover effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.icon {
+    font-size: 3rem; /* Larger icons for visibility */
+    color: #007bff; /* Maintained blue accent color */
+    margin-bottom: 12px; /* Increased margin for separation */
+}
+
+.skill-card h4 {
+    font-size: 1.6rem; /* Slightly larger title */
+    margin-bottom: 10px; /* Increased margin for spacing */
+    color: #333;
+}
+
+
+
+.progress {
+    height: 100%;
+    background-color: #007bff; /* Maintained blue for progress */
+    border-radius: 4px; /* Slightly rounder corners */
+    transition: width 0.4s ease;
+}
+
+.skill-card p {
+    font-size: 1rem; /* Slightly larger for readability */
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .skills-section {
+        padding: 30px 10px; /* Reduced padding for smaller screens */
+    }
+}
